@@ -60,4 +60,20 @@ const mapDispatchToProps = (dispatch) => {
 	};
 };
 
+//bindActionCreators 简化 mapDispatchToProps
+//const mapDispatchToProps = (dispatch) => bindActionCreators(
+//	{
+//		onToggleTodo:toggleTodo,
+//		onRemoveTodo:removeTodo
+//	},
+//	dispatch
+//);
+
+
+//利用prop到action构造函数的映射进一步简化 mapDispatchToProps
+//const mapDispatchToProps = {
+//	onToggleTodo:toggleTodo,
+//	onRemoveTodo:removeTodo
+//}
+
 export default connect(mapStateToProps,mapDispatchToProps)(TodoList);

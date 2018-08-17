@@ -21,6 +21,20 @@ class Counter extends Component{
 	}
 }
 
+// 无状态组件函数版
+// function Counter(props){
+// //以下也可以直接在参数中结构Counter({caption,onIncrement,onDecrement,value})
+// 	const {caption,onIncrement,onDecrement,value} = props;
+// 	return(
+// 		<div>
+// 	       <button style={buttonStyle} onClick={onIncrement}>+</button>
+// 	       <button style={buttonStyle} onClick={onDecrement}>-</button>
+// 	       <span>{caption} count: {value}</span>
+// 	    </div>
+// 	)
+// }
+
+
 Counter.propTypes = {
 	caption:PropTypes.string.isRequired,
 	onIncrement:PropTypes.func.isRequired,

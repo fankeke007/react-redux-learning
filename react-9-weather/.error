@@ -1,0 +1,4 @@
+1.Component 开头必须得大写
+2.connet返回结果的函数参数需与组件名同
+3.controlled-compoent(即在react中表单的处理注意事项。和Vue中类似，事件监听，更新状态)
+
